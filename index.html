@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina principal</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3e74f1880f.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+
+
+  <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+
+<body>
+  <header style="background-color: blue;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="titulo">
+          <h1 class="jb-dev">JB - Jr. Developer</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page" text-white>Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a> <!--target="_blank" para abrirlo en otra ventana-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iniciarSesion.html">Iniciar Sesion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacta copy.html">Contacta</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+              style="background: #0f1826; color: white;">
+            <button class="btn btn-outline-success" type="submit"
+              style="background: #061d43; color: white;">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="js/bootstrap.min.js"></script>
+  <main>
+    <video id="video-fondo" class="full-screen-video" src="img/Video Fondo.mp4" muted loop autoplay></video>
+
+    <div class="redes-sociales1">
+      <a href="#" title="GitHub"><i class="fab fa-github " style="color: #ff0000;"></i></a>
+      <a href="https://twitter.com/Yeibii" target="_blank" title="Twitter"><i class="fab fa-twitter"
+          style="color: rgb(3, 136, 224);"></i></a>
+      <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin" style="color: #f0a70a;"></i></a>
+      <a id="descargar-cv" href="" title="Descargar CV"><i class="fa-solid fa-book" style="color: #ffffff;"></i></a>
+      <a href="https://wa.me/34646803121" title="Contacta" target="_blank">
+        <i id="phone-icon" class="fa-solid fa-phone" style="color: #1c823e;"></i>
+      </a>
+    </div>
+
+    <div class="presentacion">
+      <img id="foto-de-perfil" src="img/foto-perfil1.jpg" alt="Imagen de perfil">
+      <h1>¡Hola!, Mi nombre es Bruno...</h1>
+      <p>"Soy un desarrollador multiplataforma apasionado por crear soluciones innovadoras y eficientes para empresas en
+        constante evolución. <br> Me encanta aprender y estoy siempre buscando nuevos desafíos para mejorar mis
+        habilidades. <br> ¡Hablemos sobre cómo podemos trabajar juntos para llevar tu proyecto al siguiente nivel!"</p>
+
+    </div>
+
+    <div class="barra-blanca"></div>
+    <div class="barra-blanca"></div>
+
+    <h2 class="titulo">MIS PROYECTOS</h2>
+    <div class="barra-2"></div>
+
+
+    <div class="cv">
+
+      <div class="columna">
+        <div class="img-container">
+          <img id="proyectos" src="img/pkmnDAM.png">
+          <div id="info_proyecto" class="info-proyecto">
+            Juego PokemonDAM <br><br> <br> Lenguajes usados: <br><br><span>
+              <i class="fa-brands fa-java" style="color: #920000;"></i>
+              <i class="fas fa-database" style="color: #005eff;"></i> </span>
+          </div>
+        </div>
+
+        <div id="info-extra">
+          <p id="extra">Formacion </p>
+          <div id="contenido-oculto">
+            <p style="text-decoration: underline;">Formacion:</p>
+            <div class="contenido">
+              <div class="fecha">2022-Actualidad</div>
+              <div class="formacion">Tecnico Superior - Desarrollador de Aplicaciones Multiplataforma. Institucion: Metrodora.</div>
+            </div>
+            <div class="contenido">
+              <div class="fecha">2016-2020</div>
+              <div class="formacion">Licenciatura - Grado en Educacion Primaria. <br> Instituacion: URJC Madrid</div>
+            </div>
+            <div class="contenido">
+              <div class="fecha">2013-2015</div>
+              <div class="formacion">Tecnico Superior - Monitor de Actividades Fisicas y Deportivas. <br>Instituacion: Salesianos Carabanchel.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-container">
+          <img id="proyectos" src="img/superYei.PNG">
+          <div id="info_proyecto" class="info-proyecto">
+            Proyecto MiniJuego Web <br> <br> Lenguajes usados: <br><br><span><i class="fa-brands fa-html5"
+                style="color: #ff9500;"></i> <i class="fa-brands fa-css3-alt" style="color: #005eff;"></i> </span><i
+              class="fa-brands fa-js" style="color: #d4bb16;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="columna">
+        <div id="info-extra" style="text-align: center; font-size: 17px;">
+          <p> <br> "Mi portfolio incluye proyectos seleccionados cuidadosamente para potenciar mi
+            aprendizaje en áreas clave como Diseño Web, Java, MySQL. <br> <br> Descubre algunos de mis trabajos más
+            destacados y
+            cómo han contribuido a mi desarrollo profesional."</p>
+        </div>
+        <div class="img-container">
+          <img id="proyectos" src="img/ScapeFromCEEP.png">
+          <div id="info_proyecto" class="info-proyecto">
+            Juego en Java <br><br> Lenguajes usados: <br><br><span>
+              <i class="fa-brands fa-java" style="color: #920000;"></i>
+              <i class="fas fa-database" style="color: #005eff;"></i> </span>
+          </div>
+        </div>
+
+        <div id="info-extra">
+          <p id="extra">Contacta </p>
+          <div id="contenido-oculto">
+            <p> <br><br> Telefono: 646803121</p>
+            <p>Correo: brunocue92@gmail.com</p>
+            <button>Contacta</button>
+          </div>
+        </div>
+        
+
+      </div>
+
+      <div class="columna">
+        <div class="img-container">
+          <img id="proyectos" src="img/bdtwitter.PNG">
+          <div id="info_proyecto" class="info-proyecto">
+            Base de datos Twitter <br><br> <br> <br> Lenguajes usados: <br><br><span>
+              <i class="fa-brands fa-java" style="color: #920000;"></i>
+              <i class="fas fa-database" style="color: #005eff;"></i> </span>
+          </div>
+        </div>
+        <div id="info-extra">
+          <p id="extra">Habilidades de interes </p>
+          <div id="contenido-oculto">
+            <p>Creativo</p>
+            <p>Dotes de Liderazgo</p>
+            <p>Trabajo en Equipo</p>
+            <p>En constante Aprendizaje</p>
+          </div>
+        </div>
+        <div class="img-container">
+          <img id="proyectos" src="img/amaloquehaces.PNG">
+          <div id="info_proyecto" class="info-proyecto">
+            Pagina Web Estudio Tatuaje <br> <br> @AmaLoQueHaces<br> <br> Lenguajes usados: <br><br><span><i
+                class="fa-brands fa-html5" style="color: #ff9500;"></i> <i class="fa-brands fa-css3-alt"
+                style="color: #005eff;"></i> </span><i class="fa-brands fa-js" style="color: #d4bb16;"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="barraFinal"></div>
+  </main>
+  <footer>
+
+    <div class="redes-sociales">
+      <a href="#"><i class="fab fa-github " style="color: #ff0000;"></i></a>
+      <a href="https://twitter.com/Yeibii" target="_blank"><i class="fab fa-twitter"
+          style="color: rgb(3, 136, 224);"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin" style="color: #f0a70a;"></i></a>
+      <a href="#"><i class="fa-regular fa-copyright" style="color: #ffffff;"></i></a>
+      <p id="copyright" style="color: white;">JB-DEV</p>
+
+    </div>
+  </footer>
+</body>
+
+
+</html>

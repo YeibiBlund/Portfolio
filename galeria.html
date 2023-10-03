@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina principal</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3e74f1880f.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/galeria.css">
+  <link rel="stylesheet" href="css/galeria.js">
+  <script src="js/galeria.js"></script>
+
+
+</head>
+
+<body>
+  <header style="background-color: blue;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="titulo">
+          <h1 class="jb-dev">JB - Jr. Developer</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page" text-white>Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a> <!--target="_blank" para abrirlo en otra ventana-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iniciarSesion.html">Iniciar Sesion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacta copy.html">Contacta</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+              style="background: #0f1826; color: white;">
+            <button class="btn btn-outline-success" type="submit"
+              style="background: #061d43; color: white;">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="js/bootstrap.min.js"></script>
+  <main>
+    <video id="video-fondo" class="full-screen-video" src="img/Video Fondo.mp4" muted loop autoplay></video>
+
+
+
+    <div class="redes-sociales1">
+      <a href="#" title="GitHub"><i class="fab fa-github " style="color: #ff0000;"></i></a>
+      <a href="https://twitter.com/Yeibii" target="_blank" title="Twitter"><i class="fab fa-twitter"
+          style="color: rgb(3, 136, 224);"></i></a>
+      <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin" style="color: #f0a70a;"></i></a>
+      <a id="descargar-cv" href="" title="Descargar CV"><i class="fa-solid fa-book" style="color: #ffffff;"></i></a>
+      <a href="https://wa.me/34646803121" title="Contacta" target="_blank">
+        <i id="phone-icon" class="fa-solid fa-phone" style="color: #1c823e;"></i>
+      </a>
+    </div>
+
+    <div class="contenedor">
+      <h1 class="misfotos">Mi Ruta de Aprendizaje 2022-2023</h1>
+
+      <div class="galeria">
+
+        <div
+          style="background: rgba(170, 126, 105, 0.34); display: flex; justify-content: center; align-items: center; border: solid; border-color: #ccd0d5cf;"
+          onmouseenter="mostrarInfo('info1')" onmouseleave="ocultarInfo('info1')">
+          <img id="img1" src="img/logo-html.png" alt="" style="max-width: 100%;">
+          <div id="info1" style="display: none;">HTML: <br><br> Lenguaje de marcado utilizado para crear páginas web.
+            Define la estructura y contenido de una página web. <br><br> Nivel: Medio</div>
+        </div>
+        <div
+          style="background: rgba(131, 159, 213, 0.34); display: flex; justify-content: center; align-items: center; border: solid; border-color: #ccd0d5cf;"
+          onmouseenter="mostrarInfo('info2')" onmouseleave="ocultarInfo('info2')">
+          <img id="img1" src="img/logo-css.png" alt="" style="max-width: 100%; width: 200px;">
+          <div id="info2" style="display: none;">CSS: <br> <br>Lenguaje utilizado para dar estilo y presentación a las
+            páginas web.<br><br> Nivel: Medio</div>
+        </div>
+        <div
+          style="background: rgba(208, 199, 124, 0.34); display: flex; justify-content: center; align-items: center; border: solid; border-color: #ccd0d5cf;"
+          onmouseenter="mostrarInfo('info3')" onmouseleave="ocultarInfo('info3')">
+          <img id="img1"
+            src="img/kisspng-javascript-programmer-programming-language-compute-node-js-5b35fcbd143445.0682463015302647650828.png"
+            alt="" style="max-width: 100%; width: 180px;">
+          <div id="info3" style="display: none;">JavaScript: <br> <br>Lenguaje de programación que se utiliza
+            principalmente para crear interactividad en una página web, ya sea mediante la creación de animaciones,
+            validaciones de formularios, entre otras cosas. </div>
+        </div>
+        <div
+          style="background: rgba(193, 113, 113, 0.34); display: flex; justify-content: center; align-items: center; border: solid; border-color: #ccd0d5cf;"
+          onmouseenter="mostrarInfo('info4')" onmouseleave="ocultarInfo('info4')">
+          <img id="img1"
+            src="img/kisspng-java-runtime-environment-computer-icons-java-platf-java-5ade3063f31610.0948145615245108199957.png"
+            alt="" style="max-width: 100%; width: 180px;">
+          <div id="info4" style="display: none;">Java: <br> <br>Lenguaje de programación orientado a objetos y de
+            propósito general que se utiliza en una amplia variedad de aplicaciones, desde desarrollo de software hasta
+            desarrollo de aplicaciones móviles y web. </div>
+        </div>
+        <div
+          style="background: rgba(157, 136, 73, 0.34); display: flex; justify-content: center; align-items: center; border: solid; border-color: #ccd0d5cf;"
+          onmouseenter="mostrarInfo('info5')" onmouseleave="ocultarInfo('info5')">
+          <img id="img1"
+            src="img/kisspng-mysql-relational-database-management-system-logo-m-mysql-instalación-y-creación-usuario-atrum-5b649e7bb60bf3.4045674715333208277457.png"
+            alt="" style="max-width: 100%; width: 180px;">
+          <div id="info5" style="display: none;">MySQL: <br> <br>Sistema de gestión de bases de datos relacionales de
+            código abierto que se utiliza para almacenar y gestionar grandes cantidades de información de manera
+            eficiente y segura.</div>
+        </div>
+        <script>
+          function mostrarInfo(id) {
+            var info = document.getElementById(id);
+            info.style.display = "block";
+          }
+
+          function ocultarInfo(id) {
+            var info = document.getElementById(id);
+            info.style.display = "none";
+          }
+        </script>
+      </div>
+    </div>
+
+    <div class="contenedor-video">
+      <video style="margin-bottom: 100px;" src="img/Extreme Snowboarding _ Edit 2020.mp4" controls></video>
+    </div>
+
+
+
+  </main>
+  <footer>
+    <div class="redes-sociales">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/Yeibii" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin" style="color: #f0a70a;"></i></a>
+
+    </div>
+  </footer>
+</body>
+
+</html>

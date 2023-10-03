@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina principal</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3e74f1880f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha384-7vHgDLipGhJRpX8WQq3ZYvBzmWLZLJhPfh8WlB5tg5TpG0UbFgHWJ8X2W3qA3SoM" crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha384-2t2QhZ09N8t1osYt+emTJQ2vcCzx7XNP1Dd+WOtiAXgZsa+G1B44ELdHDDs+nwGn" crossorigin=""></script>
+    <script src="js/contacta.js"></script>
+    <script src="js/galeria.js"></script>
+
+
+  <link rel="stylesheet" href="css/contacta.css">
+
+
+</head>
+
+<body>
+  <header style="background-color: blue;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="titulo">
+          <h1 class="jb-dev">JB - Jr. Developer</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page" text-white>Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a> <!--target="_blank" para abrirlo en otra ventana-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iniciarSesion.html">Iniciar Sesion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacta.html">Contacta</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+              style="background: #0f1826; color: white;">
+            <button class="btn btn-outline-success" type="submit"
+              style="background: #061d43; color: white;">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="js/bootstrap.min.js"></script>
+  <main>
+    <video id="video-fondo" class="full-screen-video" src="img/Video Fondo.mp4" muted loop autoplay></video>
+    <div class="redes-sociales1">
+      <a href="#"title="GitHub"><i class="fab fa-github " style="color: #ff0000;"></i></a>
+      <a href="https://twitter.com/Yeibii" target="_blank"title="Twitter"><i class="fab fa-twitter"
+          style="color: rgb(3, 136, 224);"></i></a>
+      <a href="#"title="Linkedin"><i class="fa-brands fa-linkedin" style="color: #f0a70a;"></i></a>
+      <a id="descargar-cv" href="" title="Descargar CV"><i class="fa-solid fa-file" style="color: #ffffff;"></i></a>
+      <a href="https://wa.me/34646803121" title="Contacta" target="_blank">
+        <i class="fa-solid fa-phone" style="color: #1c823e;"></i>
+      </a>
+    </div>
+
+
+    <p style="color: white;">Pulsa el boton para conocer tus coordenadas</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
+    <div id="mapid"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  
+    <script>
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+      }
+
+      
+    </script>
+
+
+
+
+
+  </main>
+  <footer style="margin-top: 200px;">
+    <div class="redes-sociales">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/Yeibii" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin" style="color: #f0a70a;"></i></a>
+
+    </div>
+  </footer>
+</body>
+
+</html>
